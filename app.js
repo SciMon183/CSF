@@ -1,4 +1,4 @@
-const API_URL = 'CSF/api/sensor.php';
+const API_URL = 'api/sensor.php';
 
 let tempChart;
 let airChart;
