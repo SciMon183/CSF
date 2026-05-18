@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Air Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Smart Air Dashboard</h1>
+        <p>Monitoring danych z czujników w czasie rzeczywistym</p>
+    </header>
+
+    <section class="cards">
+
+        <div class="card motion">
+            <h2>Ruch</h2>
+            <div class="value" id="motion">--</div>
+        </div>
+
+        <div class="card dust">
+            <h2>Pył PM2.5</h2>
+            <div class="value" id="dust">-- µg/m³</div>
+        </div>
+
+        <div class="card aqi">
+            <h2>Air Quality</h2>
+            <div class="value" id="aqi">-- AQI</div>
+        </div>
+
+        <div class="card temperature">
+            <h2>Temperatura</h2>
+            <div class="value" id="temperature">-- °C</div>
+        </div>
+
+        <div class="card pressure">
+            <h2>Ciśnienie</h2>
+            <div class="value" id="pressure">-- hPa</div>
+        </div>
+
+        <div class="card methane">
+            <h2>Metan</h2>
+            <div class="value" id="methane">-- ppm</div>
+        </div>
+
+    </section>
+
+    <section class="charts">
+
+        <div class="chart-box">
+            <h3>Temperatura</h3>
+            <canvas id="tempChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Jakość powietrza</h3>
+            <canvas id="airChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Metan</h3>
+            <canvas id="methaneChart"></canvas>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
