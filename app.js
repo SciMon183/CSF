@@ -28,7 +28,6 @@ function updateCharts(data) {
     const temperatures = data.map(item => item.temperature);
     const air = data.map(item => item.aqi);
     const methane = data.map(item => item.methane);
-
     if(tempChart) tempChart.destroy();
     if(airChart) airChart.destroy();
     if(methaneChart) methaneChart.destroy();
