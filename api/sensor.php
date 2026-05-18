@@ -4,9 +4,9 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
 $host = 'localhost';
-$dbname = 'sensors_db';
-$user = 'root';
-$password = '';
+$dbname = 'csf';
+$user = 'csf';
+$password = 'csf';
 
 try {
 
